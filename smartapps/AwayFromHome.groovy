@@ -40,34 +40,34 @@ preferences {
 	section("When all of these people leave home") {
 		input "people", "capability.presenceSensor", multiple: true
 	}
-	section("And there is no motion at home on these sensors (optional)") {
+	section("And there is no motion at home on these sensors [optional]") {
 		input "motions", "capability.motionSensor", title: "Where?", multiple: true, required: false
 	}
 	section("Turn off these lights") {
 		input "switches", "capability.switch", title: "Switch", multiple: true, required: optional
 	}
-	section("And activate the alarm system (optional)") {
+	section("And activate the alarm system [optional]") {
 		input "alarmSwitch", "capability.contactSensor", title: "Alarm Switch", required: false
 	}
 	section("Set the ecobee thermostat(s)") {
 		input "ecobee", "capability.thermostat", title: "Ecobee Thermostat(s)", multiple: true
 	}
-	section("Heating set Point for ecobee, default = 60°F/14°C") {
+	section("Heating set Point for ecobee [default = 60°F/14°C]") {
 		input "givenHeatTemp", "decimal", title: "Heat Temp", required: false
 	}
-	section("Cooling set Point for ecobee, default = 80°F/27°C") {
+	section("Cooling set Point for ecobee [default = 80°F/27°C]") {
 		input "givenCoolTemp", "decimal", title: "Cool Temp", required: false
 	}
 	section("Or set the ecobee to this Climate Name (ex. Away)") {
 		input "givenClimateName", "text", title: "Climate Name", required: false
 	}
-	section("Lock these locks (optional)") {
+	section("Lock these locks [optional]") {
 		input "locks", "capability.lock", title: "Locks?", required: false, multiple: true
 	}
-	section("Arm this(ese) camera(s) (optional)") {
+	section("Arm this(ese) camera(s) [optional]") {
 		input "cameras", "capability.imageCapture", title: "Cameras", multiple: true, required: false
 	}
-	section("Trigger these actions when home has been quiet for (default=3 minutes)") {
+	section("Trigger these actions when home has been quiet for [default=3 minutes]") {
 		input "residentsQuietThreshold", "number", title: "Time in minutes", required: false
 	}
 	section("Notifications") {
